@@ -1,0 +1,198 @@
+.admin-page {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.admin-header {
+  padding: 0 5%;
+  margin-bottom: 10px;
+}
+
+.admin-header p {
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.add-movie-btn {
+  margin: 0 5% 20px;
+  border: none;
+}
+
+.admin-movie-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin: 0 5% 10px;
+}
+
+.admin-movie-actions .add-movie-btn {
+  margin: 0;
+}
+
+.poster-refresh-message {
+  color: var(--text-muted);
+  text-align: right;
+  margin: 0 5% 18px;
+  font-size: 0.9rem;
+}
+
+.admin-table-wrap {
+  padding: 0 5%;
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-card);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.88rem;
+}
+
+.admin-table th {
+  color: var(--text-muted);
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.admin-thumb {
+  width: 40px;
+  height: 58px;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+
+.admin-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-small {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background: transparent;
+  color: var(--text-main);
+  font-size: 0.8rem;
+}
+
+.btn-small:hover {
+  background: var(--bg-card-hover);
+}
+
+.btn-danger {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.btn-danger:hover {
+  background: rgba(255, 92, 92, 0.12);
+}
+
+.role-badge {
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.role-admin {
+  background: rgba(233, 30, 140, 0.18);
+  color: var(--accent-2);
+}
+
+.role-user {
+  background: rgba(123, 47, 247, 0.18);
+  color: #b98bff;
+}
+
+/* modal */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 20px;
+}
+
+.modal-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 28px;
+  width: 100%;
+  max-width: 480px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-card label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.title-lookup-row {
+  display: flex;
+  gap: 8px;
+}
+
+.title-lookup-row input {
+  min-width: 0;
+  flex: 1;
+}
+
+.modal-card small {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+}
+
+.modal-card input,
+.modal-card textarea {
+  width: 100%;
+  margin-top: 6px;
+  padding: 9px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-dark);
+  color: var(--text-main);
+  font-size: 0.88rem;
+}
+
+.modal-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.checkbox-label {
+  display: flex !important;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-label input {
+  width: auto !important;
+  margin-top: 0 !important;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
